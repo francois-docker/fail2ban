@@ -13,5 +13,3 @@ git clone https://github.com/francois-docker/fail2ban.git
 cd fail2ban
 docker build -t francois/fail2ban .
 ```
-
-TODO: dynamically set the time zone
