@@ -20,5 +20,5 @@ function check_timezone {
         fi
     fi
 }
-
+rm -rf /var/run/fail2ban/fail2ban.sock
 check_timezone && /usr/local/bin/fail2ban-client -f start && tailf /var/log/fail2ban.log
